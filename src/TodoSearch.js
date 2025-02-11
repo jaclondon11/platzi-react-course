@@ -2,9 +2,6 @@ import React from 'react';
 import './TodoSearch.css';
 
 function TodoSearch({searchValue, setSearchValue}){
-  console.log('Todo Search typed: ');
-  console.log(searchValue);
-
   return (
     <input 
       className='TodoSearch' 
