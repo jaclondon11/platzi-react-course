@@ -15,10 +15,6 @@ function TodoItem({text, completed, onComplete, onDelete}){
       <p className={`TodoItem-p ${completed && "TodoItem-p--complete"}`}>
         {text}
       </p>
-      {/* <span className="Icon Icon-delete"
-        onClick={onDelete}>
-        X
-      </span> */}
       <span className='Icon Icon-delete span-icon-close'
         onClick={onDelete}>
           <AiOutlineCloseCircle />
