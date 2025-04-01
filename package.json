@@ -32,7 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "htts://github.com/jaclondon11/platzi-react-course",
+  "homepage": "https://jaclondon11.github.io/platzi-react-course",
   "devDependencies": {
     "gh-pages": "^4.0.0"
   }
