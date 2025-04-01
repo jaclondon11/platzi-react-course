@@ -19,8 +19,8 @@ function AppUI(){
     deleteTodo,
     searchValue,
     totalTodoList,
-    openModal,
-    setOpenModal
+    modalOpen,
+    setModalOpen
   } = React.useContext(TodoContext);
 
     return (
@@ -50,9 +50,12 @@ function AppUI(){
               />
             ))}
           </TodoList>
-          <TodoCreateButton/>
+
+          <TodoCreateButton 
+            setModalOpen={setModalOpen}
+          />
           
-          {openModal && (
+          {modalOpen && (
             <Modal>
               Feature to add TODOs in modal
             </Modal>

@@ -24,22 +24,22 @@ function TodoProvider({ children }) {
     } = useLocalStorage(TODOS_APP_KEY, defaultTodoList);
 
     const [searchValue, setSearchValue] = React.useState('');
-    const [openModal, setOpenModal] = React.useState(false);
+    const [modalOpen, setModalOpen] = React.useState(false);
     const completed = todoList.filter(todo => !!todo.completed).length;
     const totalTodoList = todoList.length;
 
     const completeTodo = (text) => {
-    const newTodoList = [...todoList];
-    const index = newTodoList.findIndex(task => task.text === text);
-    newTodoList[index].completed = !newTodoList[index].completed;
-    saveTodoList(newTodoList);
+        const newTodoList = [...todoList];
+        const index = newTodoList.findIndex(task => task.text === text);
+        newTodoList[index].completed = !newTodoList[index].completed;
+        saveTodoList(newTodoList);
     }
 
     const deleteTodo = (text) => {
-    const newTodoList = [...todoList];
-    const index = newTodoList.findIndex(task => task.text === text);
-    newTodoList.splice(index, 1)
-    saveTodoList(newTodoList);
+        const newTodoList = [...todoList];
+        const index = newTodoList.findIndex(task => task.text === text);
+        newTodoList.splice(index, 1)
+        saveTodoList(newTodoList);
     }
 
     return (
@@ -53,8 +53,8 @@ function TodoProvider({ children }) {
             deleteTodo,
             loading,
             error,
-            openModal,
-            setOpenModal
+            modalOpen,
+            setModalOpen,
         }}>
             {children}
         </TodoContext.Provider>

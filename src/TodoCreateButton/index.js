@@ -1,8 +1,19 @@
 import './TodoCreateButton.css'
 
-function TodoCreateButton(){
+function TodoCreateButton({ setModalOpen }) {
+  
   return (
-    <button className="TodoCreateButton" type='button'>+</button>
+    <button 
+      className="TodoCreateButton" 
+      type='button' 
+      onClick={
+        () => {
+          setModalOpen(state => !state)
+        }
+      }
+      >
+        +
+    </button>
   );
 }
 
