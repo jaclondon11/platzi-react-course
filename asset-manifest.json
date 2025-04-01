@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "//platzi-react-course/static/css/main.8ffcdecc.css",
-    "main.js": "//platzi-react-course/static/js/main.0788a0a4.js",
-    "index.html": "//platzi-react-course/index.html",
-    "main.8ffcdecc.css.map": "//platzi-react-course/static/css/main.8ffcdecc.css.map",
-    "main.0788a0a4.js.map": "//platzi-react-course/static/js/main.0788a0a4.js.map"
+    "main.css": "/jaclondon11.github.io/platzi-react-course/static/css/main.8ffcdecc.css",
+    "main.js": "/jaclondon11.github.io/platzi-react-course/static/js/main.0788a0a4.js",
+    "index.html": "/jaclondon11.github.io/platzi-react-course/index.html",
+    "main.8ffcdecc.css.map": "/jaclondon11.github.io/platzi-react-course/static/css/main.8ffcdecc.css.map",
+    "main.0788a0a4.js.map": "/jaclondon11.github.io/platzi-react-course/static/js/main.0788a0a4.js.map"
   },
   "entrypoints": [
     "static/css/main.8ffcdecc.css",
