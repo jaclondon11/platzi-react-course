@@ -28,6 +28,15 @@ function TodoProvider({ children }) {
     const completed = todoList.filter(todo => !!todo.completed).length;
     const totalTodoList = todoList.length;
 
+    const addTodo = (text) => {
+        const newTodoList = [...todoList];
+        newTodoList.push({
+            completed: false,
+            text,
+        });
+        saveTodoList(newTodoList);
+    }
+
     const completeTodo = (text) => {
         const newTodoList = [...todoList];
         const index = newTodoList.findIndex(task => task.text === text);
@@ -49,6 +58,7 @@ function TodoProvider({ children }) {
             searchValue,
             setSearchValue,
             todoList,
+            addTodo,
             completeTodo,
             deleteTodo,
             loading,
