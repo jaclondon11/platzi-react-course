@@ -9,7 +9,7 @@ import { ErrorTodos } from '../ErrorTodos';
 import { LoadingTodos } from '../LoadingTodos';
 import { Modal } from '../Modal';
 import { TodoContext } from '../TodoContext';
-
+import { TodoForm } from '../TodoForm';
 
 function AppUI(){
   const {loading,
@@ -57,7 +57,7 @@ function AppUI(){
           
           {modalOpen && (
             <Modal>
-              Feature to add TODOs in modal
+              <TodoForm/>
             </Modal>
           )}
         </>
